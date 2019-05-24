@@ -1,3 +1,4 @@
+require 'byebug'
 require 'rspec'
 require 'p01_int_set'
 
@@ -33,6 +34,7 @@ describe MaxIntSet do
 
   describe "#remove" do
     it "should remove a number from the set" do
+      # debugger
       set.insert(1)
       set.remove(1)
       expect(set).to_not include(1)
@@ -76,6 +78,7 @@ describe ResizingIntSet do
 
   describe "#include?" do
     it "should return false unless the number has been inserted" do
+      # debugger
       expect(set).to_not include(1)
     end
 
